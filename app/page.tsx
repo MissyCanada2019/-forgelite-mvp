@@ -7,13 +7,13 @@ import { Button } from "@/components/ui/button"
 
 export default function Component() {
 
-  const googleRedirect = () => {
-    window.location.href = `https://nextjs-flow.vercel.app/api/google/login`;
+  const githubRedirect = () => {
+    window.location.href = `https://nextjs-flow.vercel.app/api/github/login`;
   };
 
   return (
     <div className="flex flex-col bg-gray-900 items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
-      <Button onClick={googleRedirect} className="w-full max-w-sm" variant="outline">
+      <Button onClick={githubRedirect} className="w-full max-w-sm" variant="outline">
         <ChromeIcon className="h-5 w-5 mr-2" />
         Sign in with Google
       </Button>

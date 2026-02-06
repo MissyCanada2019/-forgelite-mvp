@@ -1,3 +1,4 @@
+from api.github_oauth import router as github_router
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.responses import RedirectResponse
 from starlette.middleware.sessions import SessionMiddleware
@@ -12,6 +13,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 # import json
 
 app = FastAPI()
+app.include_router(github_router)
 
 # os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'  # Only for testing, remove for production
 
