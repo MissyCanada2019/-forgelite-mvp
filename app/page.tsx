@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 /**
  * v0 by Vercel.
  * @see https://v0.dev/t/yYByZhG29TC
@@ -15,7 +15,7 @@ export default function Component() {
     <div className="flex flex-col bg-gray-900 items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
       <Button onClick={githubRedirect} className="w-full max-w-sm" variant="outline">
         <ChromeIcon className="h-5 w-5 mr-2" />
-        Sign in with Google
+        Sign in with GitHub
       </Button>
     </div>
   )
@@ -43,3 +43,4 @@ function ChromeIcon(props: any) {
     </svg>
   )
 }
+
